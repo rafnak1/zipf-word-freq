@@ -1,4 +1,4 @@
-def histogram(l):
+def histogram(l):   #receives a list of strings and returns a dictionary with each string's frequency
     s = set(l)
     histogram = {}
     for term in s:
@@ -9,7 +9,7 @@ def histogram(l):
 
     return histogram
     
-def clean(text):
+def clean(text):    #wipes some unwanted characters and converts all characters to lower case
     ignore_chars = [' ','\n', ',', '.', ':']
     for digit in range(10):
         ignore_chars.append(str(digit))
