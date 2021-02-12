@@ -26,7 +26,7 @@ def clean(text):    #wipes some unwanted characters and converts all characters 
 
 #main
 
-with open('text.txt', 'r') as f:
+with open('sample.txt', 'r') as f:
     rawtext = f.read()
 text = clean(rawtext)
 words = text.split()
